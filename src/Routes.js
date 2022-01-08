@@ -12,6 +12,8 @@ import Register from "./components/Register_login/Register";
 
 import UserDashboard from "./components/Admin/User";
 
+import reactRnd from "./components/react-rnd";
+
 
 
 class Routes extends Component {
@@ -24,6 +26,7 @@ class Routes extends Component {
           <Route path="/register" component={Auth(Register, false)} />
           <Route path="/register_login" component={Auth(RegisterLogin, false)} />
           <Route path="/product_details" component={Auth(ProductDetails, null)} />
+          <Route path="/rnd" component={Auth(reactRnd, null)} /> 
           <Route path="/shop" component={Auth(Product, null)} /> 
           <Route path="/" exact component={Auth(Home, null)} />
         </Switch>

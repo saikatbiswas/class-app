@@ -16,7 +16,6 @@ import { Doughnut } from 'react-chartjs-2';
 
 import ReactToPdf from 'react-to-pdf';
 
-// import ContextRnd from "./ContextRnd";
 Chart.register(...registerables );
 export const data = {
     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
@@ -200,7 +199,6 @@ class Product extends Component {
             const chartD = products.all.docs.forEach((item, i) =>{
                 return item.itemsold;
             });
-            console.log(chartD);
             // this.setState({
             //     chartData:chartD
             // });
@@ -286,7 +284,6 @@ class Product extends Component {
                         <div className="right">
                             <div className="shop_options">
                                 <div className="shop_girds clear">
-                                    {/* <ContextRnd /> */}
                                 </div>
                             </div>
                             <div>

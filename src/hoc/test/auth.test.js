@@ -13,7 +13,7 @@ describe('<Auth />', () => {
     // creates the store with any initial state or middleware needed
     store = mockStore({
       user: {
-        isLoaded: true,
+        auth: true,
       },
     });
   });

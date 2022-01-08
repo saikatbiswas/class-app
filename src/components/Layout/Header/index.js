@@ -16,6 +16,11 @@ class Header extends Component {
                 name:'Shop',
                 linkTo:'/shop',
                 public:true,
+            },
+            {
+                name:'React',
+                linkTo:'/rnd',
+                public:true,
             }
         ],
         user:[

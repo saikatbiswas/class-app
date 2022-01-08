@@ -1,11 +1,10 @@
 import React from 'react';
 import ThemedButton from './ThemedButton';
 
-const Toolbar = (props) => {
-    console.log('toolbar', props)
+const Toolbar = () => {
     return (
       <div>
-        <ThemedButton context={props.themeContext} />
+        <ThemedButton />
       </div>
     );
 };
