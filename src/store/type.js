@@ -21,6 +21,9 @@ export const actionType = {
     GET_ALL_BRANDS: 'get_all_brands',
 
     // Category
-    GET_ALL_CATEGORY: 'get_all_category'
+    GET_ALL_CATEGORY: 'get_all_category',
+
+    CREATE_AG_GRID: 'create_ag_grid',
+    AG_GRID_DATA: 'ag_grid_data'
 }
 

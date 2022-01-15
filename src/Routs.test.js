@@ -2,7 +2,6 @@ import React from "react";
 import { shallow } from "enzyme";
 import { findByTestAttr } from "../test/testUtils";
 import Routes from "./Routes";
-import { Route } from 'react-router';
 // import Auth from "./hoc/auth"
 // import Home from "./components/Home";
 

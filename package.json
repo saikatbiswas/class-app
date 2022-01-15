@@ -14,6 +14,9 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "ag-grid-community": "^26.2.1",
+    "ag-grid-enterprise": "^26.2.1",
+    "ag-grid-react": "^26.2.0",
     "axios": "^0.18.0",
     "chart.js": "^3.7.0",
     "prop-types": "^15.7.2",
@@ -65,11 +68,14 @@
     "check-prop-types": "^1.1.2",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
+    "enzyme-to-json": "^3.6.2",
+    "jest-canvas-mock": "^2.3.1",
     "moxios": "^0.4.0",
     "redux-mock-store": "^1.5.4"
   },
   "jest": {
     "resetMocks": false
   },
+ 
   "proxy": "http://localhost:3001"
 }

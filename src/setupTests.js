@@ -3,6 +3,9 @@
 // expect(element).toHaveTextContent(/react/i)
 // learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom';
+// jest-canvas-mock use for canvas error  
+//Error: Not implemented: HTMLCanvasElement.prototype.getContext (without installing the canvas npm package)
+import 'jest-canvas-mock';
 
 import Enzyme from 'enzyme';
 import EnzymeAdapter  from '@wojtekmaj/enzyme-adapter-react-17';

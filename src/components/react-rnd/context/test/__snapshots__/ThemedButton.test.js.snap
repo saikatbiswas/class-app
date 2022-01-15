@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render card block without error 1`] = `
+<div
+  className="context-button2"
+  data-test="context-button"
+>
+  <button
+    onClick={[Function]}
+  >
+    I am styled by theme context! 
+    0
+  </button>
+</div>
+`;

@@ -30,6 +30,11 @@ export default function usersReducer(state=DEFAULT_USER_STATE, action){
                 data:{...DEFAULT_USER_STATE},
                 auth:false
             }
+        case actionType.AG_GRID_DATA:
+            return {
+                ...state,
+                grid: action.payload.data
+            }
         default:
             return state
     }

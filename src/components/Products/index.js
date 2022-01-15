@@ -11,12 +11,19 @@ import CollapsableRadio from "../../utils/CollapsableRadio";
 
 import ProductList from "./ProductList";
 
-import { Chart, registerables   } from 'chart.js';
+import { Chart,
+    Legend,
+    Tooltip,
+    ArcElement
+} from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 
 import ReactToPdf from 'react-to-pdf';
 
-Chart.register(...registerables );
+Chart.register(
+    Legend,
+    Tooltip,
+    ArcElement);
 export const data = {
     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
     datasets: [
@@ -196,9 +203,9 @@ class Product extends Component {
         if(products.all && products.all.docs){
 
             // newFabric = [...new Set(products.all.docs.map(item => item.fabric))]
-            const chartD = products.all.docs.forEach((item, i) =>{
-                return item.itemsold;
-            });
+            // const chartD = products.all.docs.forEach((item, i) =>{
+            //     return item.itemsold;
+            // });
             // this.setState({
             //     chartData:chartD
             // });

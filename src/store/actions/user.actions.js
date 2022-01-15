@@ -17,3 +17,11 @@ export const userAuthenticate = (data) =>({
 export const userSignOut = () =>({
     type: actionType.USER_SIGN_OUT
 });
+
+export const createAgGrid = ()=>({
+    type: actionType.CREATE_AG_GRID
+});
+export const agGridData = (data)=>({
+    type: actionType.AG_GRID_DATA,
+    payload: data
+});

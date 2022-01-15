@@ -11,11 +11,11 @@ function* userLogin(action){
             password:action.payload.password
         });
 
-        alert('userData');
+        // alert('userData');
         console.log('userData',userData);
 
         yield put(actions.userAuthenticate({
-            data:userData.data.user,
+            data:userData.data,
             auth:true
         }));
 
@@ -62,7 +62,7 @@ function* watchUserAuthenticate(){
 }
 
 function* userSignOut(){
-    yield removeTokenCookie();
+    removeTokenCookie();
     yield call(actions.userSignOut());
 }
 
@@ -70,12 +70,28 @@ function* watchUserSignOut () {
     yield take(actionType.USER_SIGN_OUT, userSignOut);
 }
 
+function* createAgGrid(){
+    try{
+        
+        const data = yield call(api.createAgGrid);
+        yield put(actions.agGridData(data));
+
+    }catch(e){
+        yield console.log(e)
+    }
+}
+
+function* watchCreateAgGrid() {
+    yield takeEvery(actionType.CREATE_AG_GRID, createAgGrid);
+}
+
 
 const userSagas = [
     fork(watchUserLogin),
     fork(watchUserAuthenticate),
     fork(watchUserIsAuth),
-    fork(watchUserSignOut)
+    fork(watchUserSignOut),
+    fork(watchCreateAgGrid)
 ];
 
 export default userSagas;
