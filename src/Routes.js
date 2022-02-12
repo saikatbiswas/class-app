@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Switch, Route } from 'react-router-dom';
 
+import ScrollToTop from './utils/ScrollToTop';
+
 import Layout from "./hoc/layout";
 import Auth from "./hoc/auth"
 
@@ -21,6 +23,7 @@ class Routes extends Component {
   render(){
     return(
       <Layout data-test="routes-component">
+        <ScrollToTop />
         <Switch>
           <Route path="/admin/dashboard" component={Auth(UserDashboard, true)} />
           <Route path="/register" component={Auth(Register, false)} />
